@@ -23,25 +23,38 @@ Things you need to know:
 Note: you need to replace the brackets with the text inside (*****) to the suitable variable.
 
 To extract a part of a firmware image use:
+```bash
 $ dd if=(imageName) bs=1 skip=(decimal address of the beginning of the file) of=(outPartName)
+```
 
 To check the file type use:
+```bash
 $ file (the name of the file you need to check)
+```
 
 To read all strings in a file use:
+```bash
 $ strings -n 10 (the name of the file you need to check)  >  (name_of_the_output_file)
+```
 
 To read a file in hex form including a space with (*) to indicate a repeated code use:
+```bash
 $ hexdump -C (the name of the file you need to check)  >  (name_of_the_output_file)
+```
 
 You can limit the hex form lines to a certain number of lines using:
+```bash
 $  hexdump -C (the name of the file you need to check) | head -n (number of requested lines)
+```
 
 To search for a file name in a directory and its subdirectories use:
+```bash
 $ find . -name (the name of the wanted file)
+```
 
 To search for a text inside the files in a directory and its subdirectories use:
+```bash
 $ grep "(the wanted text)" -r .
-
+```
 
 
