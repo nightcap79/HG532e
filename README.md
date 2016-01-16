@@ -4,12 +4,13 @@
 The firmware under test is HG532eV100R001C81B025_upgrade_packet.bin.
 
 Binwalk Analysis:
-
+```bash
 DECIMAL       HEXADECIMAL     DESCRIPTION
 --------------------------------------------------------------------------------
 8792          0x2258          LZMA compressed data, properties: 0x5D, dictionary size: 8388608 bytes, uncompressed size: 97664 bytes
 70016         0x11180         LZMA compressed data, properties: 0x5D, dictionary size: 8388608 bytes, uncompressed size: 2783096 bytes
 979072        0xEF080         Squashfs filesystem, big endian, lzma signature, version 3.0, size: 2746714 bytes, 197 inodes, blocksize: 65536 bytes, created: 2014-04-17 02:44:10
+```
 
 Squashfs filesystem extracted by using sasquatch
 
