@@ -12,7 +12,8 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 979072        0xEF080         Squashfs filesystem, big endian, lzma signature, version 3.0, size: 2746714 bytes, 197 inodes, blocksize: 65536 bytes, created: 2014-04-17 02:44:10
 ```
 
-#####EF080 Squashfs filesystem extracted by using [sasquatch](https://github.com/devttys0/sasquatch)
+#####EF080 Squashfs filesystem
+Partition extracted using [sasquatch](https://github.com/devttys0/sasquatch)
 The extracted folder has base linux file system with some empty folders and links to file system, and some important files.
 List of folders:
 ```bash
