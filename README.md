@@ -13,7 +13,8 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 ```
 
 #####EF080 Squashfs filesystem
-Partition extracted using [sasquatch](https://github.com/devttys0/sasquatch)
+Partition extracted using <a href="https://github.com/devttys0/sasquatch">sasquatch</a>.
+
 The extracted folder has base linux file system with some empty folders and links to file system, and some important files.
 List of folders:
 ```bash
@@ -21,8 +22,9 @@ bin  dev  etc  init  lib  mnt  proc  sbin  tmp  usr  var
 ```
 
 important files are inside /etc:
+
 defaultcfg.xml > an encrypted configuration file, a very important file which has all usernames and passwords of  the system and the default settings of the device.
-I've looked into a project to decrypt the configuration file from a similar system hg658c.wordpress.com and found that it's not easy, you need some keys and RSAs 
+I've looked into a project to decrypt the configuration file from a similar system <a href="hg658c.wordpress.com">hg658c.wordpress.com</a> and found that it's not easy, you need some keys and RSAs 
 
 
 #####2258  LZMA compressed data
@@ -30,7 +32,7 @@ I've looked into a project to decrypt the configuration file from a similar syst
 #####11180 LZMA compressed data
 
 
-[HG532e folder on mediafire](https://www.mediafire.com/folder/71l98mn7wagi3/HG532e)
+<a href="https://www.mediafire.com/folder/71l98mn7wagi3/HG532e">HG532e folder on mediafire</a>
 
 ####Things you need to know:
 
