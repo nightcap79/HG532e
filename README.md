@@ -3,7 +3,7 @@
 
 The firmware under test is HG532eV100R001C81B025_upgrade_packet.bin.
 
-Binwalk Analysis:
+[Binwalk](https://github.com/devttys0/binwalk) Analysis:
 ```bash
 DECIMAL       HEXADECIMAL     DESCRIPTION
 --------------------------------------------------------------------------------
@@ -12,13 +12,26 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 979072        0xEF080         Squashfs filesystem, big endian, lzma signature, version 3.0, size: 2746714 bytes, 197 inodes, blocksize: 65536 bytes, created: 2014-04-17 02:44:10
 ```
 
-Squashfs filesystem extracted by using sasquatch
+#####EF080 Squashfs filesystem extracted by using [sasquatch](https://github.com/devttys0/sasquatch)
+The extracted folder has base linux file system with some empty folders and links to file system, and some important files.
+List of folders:
+```bash
+bin  dev  etc  init  lib  mnt  proc  sbin  tmp  usr  var
+```
+
+important files are inside /etc:
+defaultcfg.xml > an encrypted configuration file, a very important file which has all usernames and passwords of  the system and the default settings of the device.
+I've looked into a project to decrypt the configuration file from a similar system hg658c.wordpress.com and found that it's not easy, you need some keys and RSAs 
 
 
-HG532e folder on mediafire
+#####2258  LZMA compressed data
+
+#####11180 LZMA compressed data
 
 
-Things you need to know:
+[HG532e folder on mediafire](https://www.mediafire.com/folder/71l98mn7wagi3/HG532e)
+
+####Things you need to know:
 
 Note: you need to replace the brackets with the text inside (*****) to the suitable variable.
 
