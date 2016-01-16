@@ -24,7 +24,7 @@ bin  dev  etc  init  lib  mnt  proc  sbin  tmp  usr  var
 important files are inside /etc:
 
 defaultcfg.xml > an encrypted configuration file, a very important file which has all usernames and passwords of  the system and the default settings of the device.
-I've looked into a project to decrypt the configuration file from a similar system <a href="hg658c.wordpress.com">hg658c.wordpress.com</a> and found that it's not easy, you need some keys and RSAs 
+I've looked into a project to decrypt the configuration file from a similar system <a href="http://hg658c.wordpress.com">hg658c.wordpress.com</a> and found that it's not easy, you need some keys and RSAs 
 
 
 #####2258  LZMA compressed data
