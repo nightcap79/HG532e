@@ -41,14 +41,6 @@ def main():
 
 
 
-#def writeFile(data):
-#	fo = open("data.txt","a+")
-#	for item in data:
-#		fo.write(item+'\t')
-##	fo.write('\n')
-#	fo.close
-#	return 1
-
 ######################################################################
 if __name__ == "__main__": 
     main()  
