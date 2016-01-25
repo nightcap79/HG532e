@@ -41,9 +41,9 @@ webfilterparam.h > is the file name
 0 > is the decimal starting position of the file
 
 I've made a python script to extract the webimg files in my Github, you have to download readwebimg.py and copy it beside the webidx and webimg, and run it using the terminal:
-'''bash
+```bash
 $ python readwebimg.py
-'''
+```
 it will extract all files inside html folder
 
 #####2258  LZMA compressed data
