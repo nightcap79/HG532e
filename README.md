@@ -23,9 +23,28 @@ bin  dev  etc  init  lib  mnt  proc  sbin  tmp  usr  var
 
 important files are inside /etc:
 
-defaultcfg.xml > an encrypted configuration file, a very important file which has all usernames and passwords of  the system and the default settings of the device.
-I've looked into a project to decrypt the configuration file from a similar system <a href="http://hg658c.wordpress.com">hg658c.wordpress.com</a> and found that it's not easy, you need some keys and RSAs 
+1.defaultcfg.xml > an encrypted configuration file, a very important file which has all usernames and passwords of  the system and the default settings of the device.
+I've looked into a project to decrypt the configuration file from a similar system <a href="http://hg658c.wordpress.com">hg658c.wordpress.com</a> and found that it's not easy, you need some keys and RSAs, these keys should be stored somewhere in the system.
 
+2.webimg > the content of the website, it consists of html asp xml css files, but all the files are stacked in one file
+
+3.webidx > is the index for the files which is stacked in webimg, the content of this file as follows:
+path:html
+webfilterparam.h 39663 0
+path:html/html
+pubinfo.asp 1279 39663
+msgerrcode.asp 1347 40942
+
+path:html > is the path of the following files
+webfilterparam.h > is the file name
+39663 > is the file size
+0 > is the decimal starting position of the file
+
+I've made a python script to extract the webimg files in my Github, you have to download readwebimg.py and copy it beside the webidx and webimg, and run it using the terminal:
+'''bash
+$ python readwebimg.py
+'''
+it will extract all files inside html folder
 
 #####2258  LZMA compressed data
 
