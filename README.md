@@ -29,12 +29,13 @@ I've looked into a project to decrypt the configuration file from a similar syst
 2.webimg > the content of the website, it consists of html asp xml css files, but all the files are stacked in one file
 
 3.webidx > is the index for the files which is stacked in webimg, the content of this file as follows:
+```bash
 path:html
 webfilterparam.h 39663 0
 path:html/html
 pubinfo.asp 1279 39663
 msgerrcode.asp 1347 40942
-
+'''
 path:html > is the path of the following files
 webfilterparam.h > is the file name
 39663 > is the file size
